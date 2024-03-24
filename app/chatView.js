@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import Chat from "./Components/Chatbox";
 
-export default function App() {
+export default function ChatView () {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -17,9 +17,7 @@ export default function App() {
         </View>
         <View style={styles.section2}>
           <FontAwesome name="users" size={24} color="black" />
-          <Text style={styles.headerText}>
-            Chat
-          </Text>
+          <Text style={styles.headerText}>Chat</Text>
           <Text style={styles.headerText}>Update</Text>
           <Text style={styles.headerText}>Status</Text>
         </View>
@@ -30,12 +28,7 @@ export default function App() {
            <Chat/>
            <Chat/>
            <Chat/>
-           <Chat/>
-           <Chat/>
-           <Chat/>
-           <Chat/>
-           <Chat/>
-           <Chat/>
+          
         </ScrollView>
 
       <StatusBar style="auto" />

@@ -2,28 +2,30 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
-
+import { Link } from "expo-router";
 
 export default function Chat() {
   return (
     <View style={styles.container}>
-      <View style={styles.section1}>
-        <Image
-          source={{
-            uri: "https://reactnative.dev/docs/assets/p_cat1.png",
-          }}
-          style={styles.chat_image}
-        />
-      </View>
-      <View style={styles.section2}>
-        <View style={styles.section2_content}>
-          <Text style={styles.chat_title}>Kenneth</Text>
-          <Text style={styles.chat_time}>1:18 PM</Text>
+      {/* <Link href="/chatView"> */}
+        <View style={styles.section1}>
+          <Image
+            source={{
+              uri: "https://reactnative.dev/docs/assets/p_cat1.png",
+            }}
+            style={styles.chat_image}
+          />
         </View>
-        <View style={styles.section2_content1}>
-          <Text style={styles.chat_text}>recent messages sent </Text>
+        <View style={styles.section2}>
+          <View style={styles.section2_content}>
+            <Text style={styles.chat_title}>Kenneth</Text>
+            <Text style={styles.chat_time}>1:18 PM</Text>
+          </View>
+          <View style={styles.section2_content1}>
+            <Text style={styles.chat_text}>recent messages sent </Text>
+          </View>
         </View>
-      </View>
+      {/* </Link> */}
     </View>
   );
 }
